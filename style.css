@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#back{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#000046,#1CB5E0);
+}
+
+#left{
+    position: relative;
+    width: 70%;
+    min-height: inherit;
+    background: linear-gradient(#000046,#1CB5E0);
+}
+
+#left>h1{
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: #e4e4f5;
+    font-weight: 600;
+}
+
+#left>h4{
+    position: absolute;
+    top: 14%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: #ffff;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 6px;
+    line-height: 25px;
+}
+
+#playerback{
+   position: absolute;
+   top: 55%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+   color: #ffff;
+}
+
+#playerback #circle{
+    width: 300px;
+    min-height: 300px;
+    border-radius: 50%;
+    background-image: url("https://jonlieffmd.com/wp-content/uploads/2013/02/Music-vector-Feature-HiRes-249x300.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#playerback h1{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#playerback h4{
+    color: #dadada;
+    font-weight: 500;
+}
+
+#playlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 0 50px;
+    margin-top: 15px;
+}
+
+#previous {
+    transform: rotate(180deg);
+}
+
+.prenxt{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:right;
+}
+
+.line{
+    position: absolute;
+    left: 5px; 
+    width: 3px;
+    height: 20px;
+    background-color: #ffff;
+}
+
+#lnrght{
+   left:25px ;
+}
+
+#playcircle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(29, 28, 28);
+}
+
+
+#right{
+    width: 30%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px); 
+    box-shadow: 20px 50px 50px rgb(0,0,0,0.5);
+    padding: 30px;
+    overflow: auto;
+}
+
+.songs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 20px 50px 50px rgb(0,0,0,0.5);
+    color: #000046;
+    margin-bottom: 30px;
+}
+
+.songs:last-child{
+    margin-bottom: 0;
+}
+
+#logoimg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("https://jonlieffmd.com/wp-content/uploads/2013/02/Music-vector-Feature-HiRes-249x300.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.songs h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.songs h6{
+    font-weight: 500;
+    margin: 3px 0 15px 0;
+}
+
+.songs button{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 40px;
+    height: 40px;
+    color: #ffff;
+    border: 0;
+    border-radius: 50%;
+    padding: 5px ;
+    background: linear-gradient(#000046,#1CB5E0);
+}
+
+button i{
+    font-size: 20px;
+}
+
+
+@media(max-width:500px ){
+    #back{
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+    }
+    #left >h1{
+        font-size: 20px;
+        top: 4%;
+    }
+    #left >h4{
+        font-size: 14px;
+        top: 12%;
+    }
+
+
+    #right{
+        width: 100%;
+    }
+}
